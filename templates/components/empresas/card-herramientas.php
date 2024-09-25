@@ -12,7 +12,7 @@
 	  $the_query = new WP_Query( $args );
 				   
 				   ?>
-				 		<div class="card border-0 text-center text-white   rounded p-3 mh-100" style="min-height: 380px;">
+				 		<div class="card border-0 text-center text-white rounded p-3 my-2" style="min-height: 380px;">
 						<h3 class="my-3 fw-bold">Herramientas</h3>
 						<?php 
 						   if( $the_query->have_posts() ):  
@@ -21,7 +21,7 @@
 							<?php 
 							while( $the_query->have_posts() ) : $the_query->the_post();
 							?>
-						  <li class="list-group-item py-3"><a href="<?=the_permalink();?>" class="text-white float-start"><?=the_title();?></a> <a href="<?=the_permalink();?>" class="btn btn-sm  text-color-1  float-end">Cotizar</a></li>
+						  <li class="list-group-item py-3"><a href="<?=the_permalink();?>" class="text-white float-start fw-400"><?=the_title();?></a> <a href="<?=the_permalink();?>" class="btn btn-sm  text-color-1  float-end">Cotizar</a></li>
 						   <?php endwhile;?>
 						</ul>
 					<?php endif;?>

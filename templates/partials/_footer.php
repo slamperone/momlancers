@@ -15,7 +15,7 @@
                 </div>
             </div>
             <div class="row my-3">
-            	<div class="col-10 col-md-6 text-center mx-auto">
+            	<div class="col-12 col-md-6 text-center mx-auto">
             		<div class="d-block">
             			<a target="_blank" href="https://www.linkedin.com/company/momlancers/"><img src="<?php bloginfo('template_directory');?>/assets/images/icon-linkedin.png" class="img-fluid ficons" alt="Linked In" ></a>
             			<a target="_blank" href="https://www.facebook.com/momlancers/"><img src="<?php bloginfo('template_directory');?>/assets/images/icon-facebook.png" class="img-fluid ficons" alt="Facebool" ></a>
