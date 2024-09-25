@@ -1,0 +1,73 @@
+ .image-zoom{
+     img{ 
+     	transition: transform 0.3s ease;
+	      &:hover {
+	            transform: scale(1.1);
+	        }
+	    }
+}
+
+.image-brightnes{
+   img{
+   	 &:hover{
+         filter: brightness(90%);
+    }
+   }
+}
+
+
+/* Preloader */
+#preloader {
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color:#fff; /* change if the mask should have another color then white */
+  z-index:9999; /* makes sure it stays on top */
+}
+
+#status {
+  width:200px;
+  height:200px;
+  position:absolute;
+  left:50%; /* centers the loading animation horizontally one the screen */
+  top:50%; /* centers the loading animation vertically one the screen */
+  background-image:url(../images/status.gif); /* path to your loading animation */
+  background-repeat:no-repeat;
+  background-position:center;
+  margin:-100px 0 0 -100px; /* is width and height divided by two */
+}
+
+/* Efecto de fade-out */
+    .fade-out {
+      opacity: 0;
+      pointer-events: none; /* Opcional, evita la interacción con elementos invisibles */
+    }
+
+    /* Efecto de fade-in */
+    .fade-in {
+      opacity: 1;
+    }
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+   .row{
+   box-shadow: -1px 13px 17px -10px rgba(0,0,0,0.20);
+-webkit-box-shadow: -1px 13px 17px -10px rgba(0,0,0,0.20);
+-moz-box-shadow: -1px 13px 17px -10px rgba(0,0,0,0.20);
+      background:white;
+       height:90px!important;
+       overflow: hidden;
+   }
+  
+  z-index: 1000;
+  transition:position 1s linear;
+  .header-top{
+    display:none;
+  }
+}

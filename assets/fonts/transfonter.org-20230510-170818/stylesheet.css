@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'Helvetica Neue LT Std';
+    src: url('HelveticaNeueLTStd-BdCn.woff2') format('woff2'),
+        url('HelveticaNeueLTStd-BdCn.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue LT Std';
+    src: url('HelveticaNeueLTStd-BlkCn.woff2') format('woff2'),
+        url('HelveticaNeueLTStd-BlkCn.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue LT Std';
+    src: url('HelveticaNeueLTStd-HvCn.woff2') format('woff2'),
+        url('HelveticaNeueLTStd-HvCn.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue LT Std';
+    src: url('HelveticaNeueLTStd-Md.woff2') format('woff2'),
+        url('HelveticaNeueLTStd-Md.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue LT Std';
+    src: url('HelveticaNeueLTStd-MdCn.woff2') format('woff2'),
+        url('HelveticaNeueLTStd-MdCn.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue LT Std';
+    src: url('HelveticaNeueLTStd-ThCn.woff2') format('woff2'),
+        url('HelveticaNeueLTStd-ThCn.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue LT Std';
+    src: url('HelveticaNeueLTStd-Th.woff2') format('woff2'),
+        url('HelveticaNeueLTStd-Th.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,48 @@
+.button-whatsapp {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    background-color: #25D366;
+    color: white;
+    
+    text-transform:uppercase;
+    text-decoration: none;
+    border-radius: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Estilo para la imagen dentro del botón */
+.button-whatsapp img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    filter: invert(1);
+    /* Esto convierte los colores de la imagen a blanco. Puedes ajustarlo o eliminarlo según la imagen que uses */
+}
+
+/* Efectos al pasar el ratón por el botón */
+.button-whatsapp:hover {
+    background-color: #1EBE56;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.button-whatsapp:active {
+    background-color: #169E49;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.accordion{
+    
+    .accordion-item{
+      border:none;  
+    }
+
+    .accordion-button:not(.collapsed) {
+        color: var(--color1)!important;
+        background-color: transparent!important;
+        box-shadow: inset 0 calc(-1* var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+    }
+}

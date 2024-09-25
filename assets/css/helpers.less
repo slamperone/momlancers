@@ -1,0 +1,59 @@
+.text-color-1{ color:var(--color1)!important;}
+.text-color-2{ color:var(--color2)!important;}
+.text-color-3{ color:var(--color3)!important;}
+.text-color-4{ color:var(--color4)!important;}
+.text-color-5{ color:var(--color5)!important;}
+.text-color-6{ color:var(--color6)!important;}
+.text-color-7{ color:var(--color7)!important;}
+.text-color-8{ color:var(--color8)!important;}
+.text-color-8{ color:var(--color9)!important;}
+.text-color-10{ color:var(--color10);}
+
+.fs-italic{
+	font-style: italic!important;
+}
+
+.item-zoom-effect .item-img img {
+    transition: transform 0.2s linear;
+}
+
+.item-zoom-effect:hover .item-img img {
+    transform: scale(1.1); /* Ajusta la escala según el nivel de zoom que prefieras */
+}
+
+
+.image-zoom{
+	    transition: transform 0.3s linear;
+}
+
+.image-zoom:hover{
+	  transform: scale(1.1); /* Ajusta la escala según el nivel de zoom que prefieras */
+}
+
+.button{
+	padding:1rem;
+	text-transform:uppercase;
+	font-style:italic;
+}
+
+.button-filled{
+	background:var(--color2);
+	border:3px solid var(--color2);
+	color:#FFF;
+	&:hover{
+		color:var(--color2);
+		background:var(--color3);
+		 border:3px solid var(--color1);
+	}
+}
+
+.button-outline{
+	background:transparent;
+	border:3px solid var(--color2);
+	color:var(--color2);
+	&:hover{
+		color:var(--color8);
+		background:var(--color3);
+		 border:3px solid var(--color8);
+	}
+}

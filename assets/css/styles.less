@@ -1,0 +1,114 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --main-text-color: #5F646A;
+  --font-headers:'Montserrat' , sans-serif;
+  --font-buttons:'Montserrat' , sans-serif;
+  --font-nav:'Montserrat' , sans-serif;
+  --font-text:'Montserrat' , sans-serif;
+  --font-text-light:'Montserrat' , sans-serif;
+  --font-text-thin:'Montserrat' , sans-serif;
+  --font-text-medium:'Montserrat' , sans-serif;
+  --color0:#000000;
+  --color1:#DA1C5C;
+  --color2:#36B5FF;
+  --color3:#6C73FF;
+  --color4:#A2A2A2;
+  --color5:#B8B8B8;
+  --color6:#C2C2C2;
+  --color7:#D4D4D4;
+  --color8:#FFFFFF;
+  --colorLight:#FFFFFF;
+  --max-width:1400px;
+
+}
+//helpers 
+
+@import url('./helpers.less');
+
+
+body{
+  font-family:var(--font-text);
+  color:var(--color0);
+  background:#F1F1F1!important;
+   
+  font-weight:500;
+}
+
+a{
+  text-decoration:none;
+   color:var(--color2);
+
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family:var(--font-headers);
+ 
+}
+
+p,a{
+        
+}
+
+.max-width{
+  max-width: var(--max-width);
+}
+
+
+.main-fluid{
+  max-width: var(--max-width);
+  margin:auto;
+  display:block;
+  padding-left:1rem;
+  padding-right:1rem;
+  background:#FFF;
+}
+
+
+.vector-1{
+  width:80px;
+  float:right;
+  margin-right:5%;
+ 
+ position:relative;
+  z-index:1000;
+   
+  bottom:240px;
+  img{
+    width:100%;
+    height:auto;
+  }
+}
+
+.fw-400{
+  font-weight: 400;
+
+}
+
+.fw-600{
+  font-weight: 600;
+
+}
+
+.cardmh375{
+  min-height: 375px;
+}
+
+.ficons{
+  max-width:45px;
+  margin: 0 .2rem;
+}
+
+@import url('./ui.less');
+@import url('./ux.less');
+@import url('./components.less');
+@import url('./blocks.less');
+@import url('./views.less');
+@import url('./straps.less');
+@import url('./sliders.less');
+@import url('./pages.less');
+@import url('./header.less');
+@import url('./sidebar.less');
+@import url('./footer.less');
+
+
