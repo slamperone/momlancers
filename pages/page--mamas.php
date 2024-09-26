@@ -116,7 +116,7 @@ get_header(); ?>
 				</div>
 			</div>
 		  <div class="row my-5">
-		  	<div class="col-12 col-md-6">
+		  	<div class="col-12 col-md-6 mb-4">
 		  		  <?php
 
 
@@ -153,7 +153,7 @@ get_header(); ?>
 							<p>No hay eventos</p>
 					<?php endif;?>
 		  	</div>	
-		  	<div class="col-12 col-md-6">
+		  	<div class="col-12 col-md-6 ">
 		  		 <?php   
 
 				 $args  = array(
@@ -173,7 +173,7 @@ get_header(); ?>
 		  				 <div class="card border-0 mb-5" >
 		  				 <div class="row g-0 align-items-center">
 						    <div class="col-md-4">
-						      <img src="<?=$img; ?>" class="img-fluid rounded-start" alt="...">
+						      <img src="<?=$img; ?>" class="img-fluid rounded-start mx-auto d-block" alt="...">
 						    </div>
 						    <div class="col-md-8">
 						      <div class="card-body">
