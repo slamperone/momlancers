@@ -25,7 +25,7 @@ get_header(); ?>
 			 		<div class="d-block">
 			 			
 			 		</div>
-			 		<a href="<?= site_url('/convocatorias/')?>" class="btn btn-primary">Ver vacantes</a>
+			 		<a href="<?= site_url('/convocatorias/')?>" class="btn btn-primary">Ver más vacantes</a>
 			 	</aside>
 			 </div>
 		  	
@@ -35,12 +35,12 @@ get_header(); ?>
 	</div>	
 </section>
 
-<section class="strap strap-historias strap-carousel-1">
-	<div class="inner py-2 py-md-5">
+<section class="strap strap-impulsa-1">
+	<div class="inner py-5">
 		<div class="container-fluid">
 	 		 <div class="row my-5 align-items-top">
 				<div class="col-12 col-md-9">
-					<h2 class="fs-2 fw-bold">Impulsa tu talento</h2>
+					<h2 class="fs-4 fw-bold">Impulsa tu talento</h2>
 					<p class="fs-5">Complementa tu formación profesional y soft skills</p>
 				</div>
 				<div class="col-12 col-md-3 text-center">
@@ -49,14 +49,16 @@ get_header(); ?>
 					</figure>
 				</div>
 			</div>
-			 <div class="row my-5 align-items-center">
-			 <button class="arrow-prev-1 position-absolute w-auto start-0 z-2">
-                    <iconify-icon icon="fluent:ios-arrow-24-regular" class="text-color-1" width="3rem" height="3rem">
-                    </iconify-icon>
-                </button>
+			 
+		  <div class="row align-items-center">
+			  	<div class="col-12 col-md-1">
+			  		<button class="arrow-prev-3" >
+						<iconify-icon icon="fluent:ios-arrow-24-regular"  class="text-color-1" width="3rem" height="3rem"></iconify-icon >
+					</button>	 
+			  	</div>
 		  	
-				<div class="col-10 offset-1 offset-md-0 col-md-10">
-			  		 <div class="owl-carousel owl-style-1 ">
+			  	<div class="col-12 col-md-9 mx-auto">
+			  		 <div class="owl-carousel owl-style-3 ">
 			  			  <?php   $args  = array(
 				 	  	'posts_per_page'    =>6,
 				        'post_type'     => 'workshops',
@@ -92,10 +94,11 @@ get_header(); ?>
 			  		</div>
 			  	</div>
 				 
-				  <button class="arrow-next-1 position-absolute w-auto end-0 z-2">
-                    <iconify-icon icon="fluent:ios-arrow-rtl-24-regular" class="text-color-1" width="3rem"
-                        height="3rem"></iconify-icon>
-                </button>
+				  	<div class="col-12 col-md-1">
+				  		 	<button  class="arrow-next-3" >
+				 		<iconify-icon icon="fluent:ios-arrow-rtl-24-regular" class="text-color-1" width="3rem" height="3rem"></iconify-icon>
+				 	</button>
+				  	</div>
 		  	
 		  </div>
 		  <!--div class="row my-5">
@@ -116,7 +119,7 @@ get_header(); ?>
 				</div>
 			</div>
 		  <div class="row my-5">
-		  	<div class="col-12 col-md-6 mb-4">
+		  	<div class="col-12 col-md-6">
 		  		  <?php
 
 
@@ -153,7 +156,7 @@ get_header(); ?>
 							<p>No hay eventos</p>
 					<?php endif;?>
 		  	</div>	
-		  	<div class="col-12 col-md-6 ">
+		  	<div class="col-12 col-md-6">
 		  		 <?php   
 
 				 $args  = array(
@@ -168,12 +171,12 @@ get_header(); ?>
 		  					while( $the_query->have_posts() ) : $the_query->the_post();
 		  						$img =  wp_get_attachment_url( get_post_thumbnail_id($the_query->ID), 'thumbnail' );
 								/*Custom Fields*/
-				  $field_bizneo23 = get_field('link_bizneo');   
+				  $field_bizneo = get_field('link_bizneo');   
 							?>
 		  				 <div class="card border-0 mb-5" >
 		  				 <div class="row g-0 align-items-center">
 						    <div class="col-md-4">
-						      <img src="<?=$img; ?>" class="img-fluid rounded-start mx-auto d-block" alt="...">
+						      <img src="<?=$img; ?>" class="img-fluid rounded-start" alt="...">
 						    </div>
 						    <div class="col-md-8">
 						      <div class="card-body">

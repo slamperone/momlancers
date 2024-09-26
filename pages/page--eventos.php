@@ -88,9 +88,9 @@ get_header(); ?>
 						    <div class="col-md-8">
 						      <div class="card-body">
 						      	<h6>Disponible ahora</h6>
-						        <h5 class="card-title"><a href="<?=the_permalink(); ?>"><?=the_title(); ?></a></h5>
+						        <h5 class="card-title"><a href="<?=the_permalink(); ?>" target="_blank"><?=the_title(); ?></a></h5>
 						        <p class="card-text"><?php   print   wp_trim_words( get_the_excerpt(), 10 ); ?></p>
-						        <a href="<?=the_permalink(); ?>" class="card-link text-end">Ir al Evento</a>
+						        <a href="<?=the_permalink(); ?>" target="_blank" class="card-link text-end">Ir al Evento</a>
 						      </div>
 						    </div>
 						  </div>
