@@ -172,14 +172,14 @@ get_header(); ?>
 		  			<img src="<?php bloginfo('template_directory');?>/assets/images/vector-1.png" alt="" class="img-floating" />
 		  		</div>
 		  </div>
-		  <div class="row my-3 text-center">
+		  <div class="row my-3 text-center align-items-center">
 		  	<?php 
 		  	$logos =  get_field('logos_clientes');
 		  	if(count($logos)>0): ?>
 
 		  	<?php
 		  	foreach($logos as $logo): ?>
-			  	<div class="col-6 col-md-2 my-4 text-center mx-auto">
+			  	<div class="col-4 col-md-1 my-4 text-center mx-auto">
 			  		<img src="<?=$logo; ?>" alt="" class="img-fluid">
 			  	</div>
 		  <?php endforeach; ?>
