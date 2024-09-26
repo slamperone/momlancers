@@ -66,19 +66,21 @@ get_header(); ?>
 				    		$title =  $post->post_title;
 				    		$link =  get_permalink();
 				  			$img =  wp_get_attachment_url( get_post_thumbnail_id($the_query->ID), 'thumbnail' );
+
+							/*Custom Fields*/
+						$field_link = get_field('link_a_la_nota');
+
 				 	   ?>
-
-
 		  	   <aside class="widget my-3">
 		  	   		 <div class="card">
 						  <img src="<?=$img;?>" class="card-img-top img-fluid" alt="...">
 						  <div class="card-body">
 						  
-						    <h5 class="fs-6  card-title"><a href="<?=the_permalink(); ?>"><?=the_title();?></a></h5>
-						    <p class="card-text"><?php print   wp_trim_words( get_the_excerpt(), 10 ); ?></p>
+						    <h5 class="fs-6  card-title"><a href="<?= $field_link ?>" target="_blank"><?=the_title();?></a></h5>
+						    <p class="card-text"><?= wp_trim_words( get_the_excerpt(), 10 ); ?></p>
 							  
 							  <p class="text-end">
-							    <a href="<?=the_permalink(); ?>" class="card-link text-end">Leer Más</a>
+							    <a href="<?= $field_link ?>" target="_blank" class="card-link text-end">Leer Más</a>
 							  </p>
 						  </div>
 						</div>
