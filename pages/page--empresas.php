@@ -180,7 +180,7 @@ if ($the_query->have_posts()):
         <div class="container-fluid">
             <div class="row my-5 align-items-top">
                 <div class="col-12 col-md-9">
-                    <h2 class="fs-2 fw-bold mt-4">Historias de éxito</h2>
+                    <h2 class="fs-2 fw-bold">Historias de éxito</h2>
                 </div>
                 <div class="col-12 col-md-3 text-center">
                     <figure class="">
