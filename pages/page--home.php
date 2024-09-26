@@ -1,6 +1,7 @@
 <?php 
 /*Custom Fields*/
 $field_txt1 = get_field('texto_1');
+
 /* Template Name: Page Inicio */
 get_header(); ?>
 <!-- /end header-->

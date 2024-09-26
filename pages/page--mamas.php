@@ -1,11 +1,8 @@
 <?php 
-/*Custom Fields*/
 
 /* Template Name: Page Mamás */
 get_header(); ?>
 <!-- /end header-->
-
- 
   
  <section class="strap strap-hero  ">
 	<div class="inner py-1 ">
@@ -123,7 +120,11 @@ get_header(); ?>
 			</div>
 		  <div class="row my-5">
 		  	<div class="col-12 col-md-6">
-		  		  <?php   $args  = array(
+		  		  <?php
+
+
+
+				  $args  = array(
 				 	  	'posts_per_page'    =>1,
 				        'post_type'     => 'events',
 				        'orderby' => 'id',
@@ -133,28 +134,32 @@ get_header(); ?>
 						   if( $the_query->have_posts() ):  
 		  					while( $the_query->have_posts() ) : $the_query->the_post();
 		  						$img =  wp_get_attachment_url( get_post_thumbnail_id($the_query->ID), 'thumbnail' );
+				/*Custom Fields*/
+				  $field_bizneo = get_field('link_bizneo');   
 							?>
 			  		 <div class="card">
 						  <img src="<?=$img;?>" class="card-img-top img-fluid" alt="...">
 						  <div class="card-body">
 						  	<h6>Disponible Ahora</h6>
-						    <h5 class="card-title"><a href="<?=the_permalink(); ?>"><?=the_title(); ?></a></h5></h5>
+						    <h5 class="card-title"><a href="<?= $field_bizneo; ?>"><?=the_title(); ?></a></h5></h5>
 						    <p class="card-text"><?php print wp_trim_words(get_the_excerpt(), 20 ) ?></p>
 						  </div>
 					 
 						  <div class="card-body text-end">
 						   
-						    <a href="<?=the_permalink(); ?>" class="card-link text-end">Ir al Evento</a>
+						    <a href="<?= $field_bizneo; ?>" class="card-link text-end">Ir al Evento</a>
 						  </div>
 						 
 			  		</div>
 			  		 <?php endwhile;?>
 			  		<?php else:?>
-							<p>No hay talleres</p>
+							<p>No hay eventos</p>
 					<?php endif;?>
 		  	</div>	
 		  	<div class="col-12 col-md-6">
-		  		 <?php   $args  = array(
+		  		 <?php   
+
+				 $args  = array(
 				 	  	'posts_per_page'    =>2,
 				        'post_type'     => 'events',
 				        'orderby' => 'id',
@@ -165,6 +170,8 @@ get_header(); ?>
 						  if( $the_query->have_posts() ):  
 		  					while( $the_query->have_posts() ) : $the_query->the_post();
 		  						$img =  wp_get_attachment_url( get_post_thumbnail_id($the_query->ID), 'thumbnail' );
+								/*Custom Fields*/
+				  $field_bizneo23 = get_field('link_bizneo');   
 							?>
 		  				 <div class="card border-0 mb-5" >
 		  				 <div class="row g-0 align-items-center">
@@ -174,9 +181,9 @@ get_header(); ?>
 						    <div class="col-md-8">
 						      <div class="card-body">
 						      	<h6>Disponible ahora</h6>
-						        <h5 class="card-title"><a href="<?=the_permalink(); ?>"><?=the_title(); ?></a></h5>
+						        <h5 class="card-title"><a href="<?= $field_bizneo23; ?>"><?=the_title(); ?></a></h5>
 						        <p class="card-text"><?php   print   wp_trim_words( get_the_excerpt(), 10 ); ?></p>
-						        <a href="<?=the_permalink(); ?>" class="card-link text-end">Ir al Evento</a>
+						        <a href="<?= $field_bizneo23; ?>" class="card-link text-end">Ir al Evento</a>
 						      </div>
 						    </div>
 						  </div>
