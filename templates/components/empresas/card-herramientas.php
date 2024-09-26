@@ -25,6 +25,6 @@
 						   <?php endwhile;?>
 						</ul>
 					<?php endif;?>
-						<p class="text-center"><a href="#" class="btn fw-bold text-white">Saber Más</a></p>
+						<!--p class="text-center"><a href="#" class="btn fw-bold text-white">Saber Más</a></p-->
 							 
 					</div>

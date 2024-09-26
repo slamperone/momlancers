@@ -11,7 +11,9 @@ get_header(); ?>
 		  <div class="row">
 		  	<div class="col-12">
 		  	 
-			  <video autoplay loop muted playsinline oncontextmenu="return false;" id="hero-video" src="<?php bloginfo('template_directory');?>/assets/video/video.mp4">	  
+			  <video autoplay loop muted playsinline oncontextmenu="return false;" id="hero-video">	  
+
+			  <source src="<?php bloginfo('template_directory');?>/assets/video/hero_video.mp4" type="video/mp4">
        			  	
        			  </video>
 		  		  
@@ -38,7 +40,7 @@ get_header(); ?>
 		  		<aside class="d-block p-5 mh-300">
 		  			 <h3 class="fs-4 my-3 fw-bold">Mamás</h3>
 		  		     <p>Para ellas que buscan retomar su vida laboral y desarrollarse profesionalmente</p>
-		  		     <b><a href="<?=get_permalink(140);?>" class="btn btn-cta">Saber Más</a></b>
+		  		     <a href="<?=get_permalink(140);?>" class="btn btn-cta fw-bold">Saber Más</a>
 		  		</aside>
 		  	</div>
 		  	<div class="col-12 col-md-2 text-center bg-1 bg-color-3 mh-300 align-items-center ">
@@ -51,7 +53,7 @@ get_header(); ?>
 		  		<aside class="d-block p-5 mh-300">
 		  		  <h3 class="fs-4 my-3  fw-bold">Empresas</h3>
 		  		  <p>Con una cultura inclusiva y diversa, dedicadas a atraer y desarrollar talento femenino.</p>
-		  		  <b><a href="<?=get_permalink(136);?>" class="btn btn-cta">Saber Más</a></b>
+		  		  <a href="<?=get_permalink(136);?>" class="btn btn-cta fw-bold">Saber Más</a>
 		  		</div>
 		  	</div>
 		  </div>
