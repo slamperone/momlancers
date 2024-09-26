@@ -37,7 +37,7 @@ get_header(); ?>
 					<p class="fs-5">Transformar el panorama laboral para las madres trabajadoras y facilitar su retorno al trabajo con programas de capacitación especializados en:</p>
 				</div>
 				<div class="col-12 col-md-3 text-center">
-					<img src="<?php bloginfo('template_directory');?>/assets/images/img-vector.png" alt="" class="img-fluid" style="margin-top: -130px;"  >
+					<img src="<?php bloginfo('template_directory');?>/assets/images/img-vector.png" alt="" class="img-fluid d-none d-lg-block" style="margin-top: -130px;"  >
 				</div>
 			</div>
 			<div class="row ">
@@ -84,7 +84,7 @@ get_header(); ?>
 				</div>
 			<div class="row">
 				 <div class="col-12 col-md-5 ">
-					  	 	<div class="d-inline-block px-3">
+					  	 	<!--div class="d-inline-block px-3">
 					  	 		 
 					  	 	 
 					  	 		<form action="" class="form my-3">
@@ -101,9 +101,11 @@ get_header(); ?>
 					  	 				<button class="btn btn-secondary w-60">Solicitar Información</button>
 					  	 			</div>
 					  	 		</form>
-					  	 	</div>
+					  	 	</div-->
 					 </div>
 					 <div class="col-12 col-md-3">
+
+					 <a href="<?= site_url('/convocatorias/')?>" class="btn btn-primary">Descubre nuestra oferta</a>
 					 		 
 					 </div>
 			 </div>
@@ -184,7 +186,7 @@ get_header(); ?>
 							 <img src="<?=$img;?>" class="card-img-top img-fluid rounded" alt="<?php print the_title();?>">
 								<div class="card-body">
 									 
-									 <h6 class="card-title fw-bold"><a href="<?=the_permalink();?>"><?php print the_title();?></a></h6>
+									 <h6 class="card-title fw-bold"><!--a href="<?=the_permalink();?>"--><?php print the_title();?><!--/a--></h6>
 								 
 									 <p><?php print   wp_trim_words( get_the_excerpt(), 10 ); ?></p>
 								</div>

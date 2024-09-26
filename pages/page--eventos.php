@@ -111,7 +111,7 @@ get_header(); ?>
 </section>
 
 
-<section class="strap strap-events">
+<!--section class="strap strap-events">
 	<div class="inner py-1">
 		<div class="container-fluid">
 			<div class="row my-3">
@@ -143,7 +143,7 @@ get_header(); ?>
 			</div>
 		</div>
 	</div>
-</section>
+</section-->
   
 <!-- /footer-->
 <?php  get_footer(); ?>
