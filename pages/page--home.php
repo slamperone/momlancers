@@ -11,7 +11,7 @@ get_header(); ?>
 		  <div class="row">
 		  	<div class="col-12">
 		  	 
-       			  <video id="hero-video" src="<?php bloginfo('template_directory');?>/assets/video/video.mp4" muted>
+			  <video autoplay loop muted playsinline oncontextmenu="return false;" id="hero-video" src="<?php bloginfo('template_directory');?>/assets/video/video.mp4">	  
        			  	
        			  </video>
 		  		  
@@ -38,7 +38,7 @@ get_header(); ?>
 		  		<aside class="d-block p-5 mh-300">
 		  			 <h3 class="fs-4 my-3 fw-bold">Mamás</h3>
 		  		     <p>Para ellas que buscan retomar su vida laboral y desarrollarse profesionalmente</p>
-		  		     <a href="<?=get_permalink(140);?>" class="btn btn-cta">Saber Más</a>
+		  		     <b><a href="<?=get_permalink(140);?>" class="btn btn-cta">Saber Más</a></b>
 		  		</aside>
 		  	</div>
 		  	<div class="col-12 col-md-2 text-center bg-1 bg-color-3 mh-300 align-items-center ">
@@ -51,7 +51,7 @@ get_header(); ?>
 		  		<aside class="d-block p-5 mh-300">
 		  		  <h3 class="fs-4 my-3  fw-bold">Empresas</h3>
 		  		  <p>Con una cultura inclusiva y diversa, dedicadas a atraer y desarrollar talento femenino.</p>
-		  		  <a href="<?=get_permalink(136);?>" class="btn btn-cta">Saber Más</a>
+		  		  <b><a href="<?=get_permalink(136);?>" class="btn btn-cta">Saber Más</a></b>
 		  		</div>
 		  	</div>
 		  </div>
@@ -200,7 +200,7 @@ get_header(); ?>
 		  			<img src="<?php bloginfo('template_directory');?>/assets/images/vector-7.png" alt="" class="img-floating-1" />
 		  		</div>
 		  		<div class="col-12 col-md-6">
-		  			<img src="<?php bloginfo('template_directory');?>/assets/images/vector-4.png" alt="" class="img-floating-2" />
+		  			<img src="<?php bloginfo('template_directory');?>/assets/images/vector-4.png" alt="" class="img-floating-2 d-none d-lg-block" />
 		  		</div>
 			</div>
 		  <div class="row   py-5">

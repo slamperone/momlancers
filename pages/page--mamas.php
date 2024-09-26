@@ -16,7 +16,7 @@ get_header(); ?>
 			  	 		<h1 class="my-3 text-white"><strong>Mamás</strong></h1>
 			  	 		<p class="py-3 text-white">Momlancers ofrece un espacio a mamás  talentosas y comprometidas con su <br> desarrollo personal y laboral</p>
 			  	 	 
-			  	 		[Codigo Iframe]
+			  	 		<a href="<?= site_url('/convocatorias/')?>" class="btn btn-primary">Descubre nuestra oferta</a>
 			  	 	</div>
 			 </div>
 			 <div class="col-12 col-md-3 bg-color-3 bg-image-3 ">
@@ -26,9 +26,9 @@ get_header(); ?>
 			 	<aside class="d-block p-2">
 			 		<h4 class="fs-4 fw-bolder my-3">Bolsa de Trabajo para mamás</h4>
 			 		<div class="d-block">
-			 			[Codigo de Iframe]
+			 			
 			 		</div>
-			 		<a href="#" class="btn btn-primary">Ver más vacantes</a>
+			 		<a href="<?= site_url('/convocatorias/')?>" class="btn btn-primary">Ver más vacantes</a>
 			 	</aside>
 			 </div>
 		  	
@@ -48,7 +48,7 @@ get_header(); ?>
 				</div>
 				<div class="col-12 col-md-3 text-center">
 					<figure class="">
-						<img src="<?php bloginfo('template_directory');?>/assets/images/vector-4.png" alt="" class="img-fluid " style="max-height:60px;" />
+						<img src="<?php bloginfo('template_directory');?>/assets/images/vector-4.png" alt="" class="img-fluid d-none d-lg-block" style="max-height:60px;" />
 					</figure>
 				</div>
 			</div>

@@ -58,7 +58,7 @@ get_header(); ?>
 						<h2 class="fs-2 fw-bold">Impacto social</h2>
 				</div>
 				<div class="col-12 col-md-3">
-					<img src="<?php bloginfo('template_directory');?>/assets/images/vector-6.png" alt="" class="img-fluid  d-none d-lg-block" style="margin-top: -90px;"  >
+					<img src="<?php bloginfo('template_directory');?>/assets/images/vector-6.png" alt="" class="img-fluid d-none d-lg-block" style="margin-top: -90px;"  >
 				</div>
 			</div>
 			<div class="row my-5 align-items-center" >
