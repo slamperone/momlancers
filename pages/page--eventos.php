@@ -30,10 +30,18 @@ get_header(); ?>
 	<div class="inner py-1">
 		<div class="container-fluid">
 			<div class="row my-5">
-				<div class="col-12">
-					 
+			<div class="col-10">
+				&nbsp;
+			</div>	
+			<div class="col-2">
+                    <img src="<?php bloginfo('template_directory'); ?>/assets/images/vector-6.png" alt="" class="img-fluid d-none d-lg-block" style="margin-top: -90px;">
+                </div>
+
+				<div class="col-12">				 
 					 <h2 class="fs-4 fw-bold">Eventos Momlancers ¡Agenda ya!</h2>
 				</div>
+
+
 			</div>
 		  <div class="row my-5">
 		  	<div class="col-12 col-md-6">
