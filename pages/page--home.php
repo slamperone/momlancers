@@ -14,10 +14,9 @@ get_header(); ?>
 		  	 
 			  <video autoplay loop muted playsinline oncontextmenu="return false;" id="hero-video">	  
 
-			  <source src="<?php bloginfo('template_directory');?>/assets/video/video.mp4" type="video/mp4">
+			  <source src="<?php bloginfo('template_directory');?>/assets/video/hero_video.mp4" type="video/mp4">
        			  	
        			  </video>
-		  		  
 		  	</div>
 		</div>
 	</div>	
