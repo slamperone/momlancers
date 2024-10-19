@@ -157,7 +157,7 @@ get_header(); ?>
 						while ($the_query->have_posts()) : $the_query->the_post();
 							$img =  wp_get_attachment_url(get_post_thumbnail_id($the_query->ID), 'thumbnail');
 							/*Custom Fields*/
-							$field_bizneo = get_field('link_bizneo');
+							$field_bizneo23 = get_field('link_bizneo');
 					?>
 							<div class="card border-0 mb-5">
 								<div class="row g-0 align-items-center">
