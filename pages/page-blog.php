@@ -27,21 +27,13 @@ get_header(); ?>
 		   	
 		  	<div class="col-12 col-md-10 mx-auto">
 		  		 <?php   
-				 
-				 the_posts_pagination( array(
-					'mid_size' => 2,
-					'prev_text' => __( 'Previous Page', 'textdomain' ),
-					'next_text' => __( 'Next Page', 'textdomain' ),
-					) );
-					
-				 
+
 				 $args  = array(
 				 	  	'posts_per_page'    =>6,
 				        'post_type'     => 'post',
 				        'orderby' => 'id',
       					'order'   => 'DESC',
-						'paged' => get_query_var('paged') ? get_query_var('paged') : 1,
-      					'offset' => 1 );
+						'paged' => get_query_var('paged') ? get_query_var('paged') : 1);
 
       					 $the_query = new WP_Query( $args );
 				    
