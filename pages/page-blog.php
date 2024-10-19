@@ -66,7 +66,9 @@ get_header(); ?>
 
 					
 		  			 <?php 
-					// Paginación
+					endwhile;
+					
+										// Paginación
     $big = 999999999; // Necesario para la paginación
     echo paginate_links(array(
         'base' => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
@@ -74,9 +76,8 @@ get_header(); ?>
         'current' => max(1, get_query_var('paged')),
         'total' => $the_query->max_num_pages
     ));
-					
-					
-					endwhile;?>
+	
+	?>
 			  		<?php else:?>
 							<p>No hay entradas</p>
 					<?php endif;?>
