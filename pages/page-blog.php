@@ -27,21 +27,15 @@ get_header(); ?>
 		   	
 		  	<div class="col-12 col-md-10 mx-auto">
 		  		 <?php   
-				 
-				 the_posts_pagination( array(
-					'mid_size' => 2,
-					'prev_text' => __( 'Previous Page', 'textdomain' ),
-					'next_text' => __( 'Next Page', 'textdomain' ),
-					) );
-					
-				 
+
+				 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+
 				 $args  = array(
 				 	  	'posts_per_page'    =>6,
 				        'post_type'     => 'post',
 				        'orderby' => 'id',
       					'order'   => 'DESC',
-						'paged' => get_query_var('paged') ? get_query_var('paged') : 1,
-      					'offset' => 1 );
+						'paged' => $paged;
 
       					 $the_query = new WP_Query( $args );
 				    
@@ -70,7 +64,7 @@ get_header(); ?>
 					
 										// Paginación
     $big = 999999999; // Necesario para la paginación
-    echo paginate_links(array(
+	echo paginate_links(array(
         'base' => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
         'format' => '?paged=%#%',
         'current' => max(1, get_query_var('paged')),
