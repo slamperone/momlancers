@@ -10,11 +10,12 @@ get_header(); ?>
 	<div class="inner">
 		<div class="container-fluid g-0">
 		  <div class="row">
-		  	<div class="col-12">
-		  	 
-			  <video autoplay loop muted playsinline oncontextmenu="return false;" id="hero-video">	  
+		  	<div class="col-12">		  	 
+			  <video id="hero-video" autoplay loop muted oncontextmenu="return false;">	  
 
-			  <source src="<?php bloginfo('template_directory');?>/assets/video/hero_video.mp4" type="video/mp4">
+			  <source src="<? bloginfo('template_directory');?>/assets/video/momlancer_home_video.mp4" type="video/mp4">
+
+			  Tu navegador no soporta el elemento de video.
        			  	
        			  </video>
 		  	</div>
@@ -315,7 +316,26 @@ get_header(); ?>
 </section-->
 
  
- 
+<script>
+        // Detectar si el dispositivo es móvil
+        function isMobile() {
+            return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+        }
+
+        // Cambiar el archivo del video si es un dispositivo móvil
+        function changeVideoForMobile() {
+            if (isMobile()) {
+                const videoElement = document.getElementById('videoPlayer');
+                const videoSource = document.getElementById('videoSource');
+                videoSource.src = '<?php bloginfo('template_directory');?>/assets/video/momlancer_home_video_mobile'; // Cambiar el archivo para móviles
+                videoElement.load(); // Recargar el video con el nuevo archivo
+            }
+        }
+
+        // Ejecutar la función para cambiar el video si es móvil
+        changeVideoForMobile();
+    </script>
+
 <!-- /footer-->
 <?php  get_footer(); ?>
 <!-- /end footer-->
