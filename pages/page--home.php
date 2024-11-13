@@ -13,7 +13,7 @@ get_header(); ?>
 		  	<div class="col-12">		  	 
 			  <video id="hero-video" autoplay loop muted oncontextmenu="return false;">	  
 
-			  <source src="<? bloginfo('template_directory');?>/assets/video/momlancer_home_video.mp4" type="video/mp4">
+			  <source src="<?= bloginfo('template_directory');?>/assets/video/momlancer_home_video.mp4" type="video/mp4">
 
 			  Tu navegador no soporta el elemento de video.
        			  	
