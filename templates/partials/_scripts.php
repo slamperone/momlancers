@@ -50,7 +50,19 @@ window.addEventListener('beforeunload', function(event) {
            
             }
   });
-  
+ 
+
+
+  document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(function() {
+        
+        var video = document.getElementById('hero-video');
+      video.style.display = 'block';
+      video.muted = true;
+      video.play();
+    }, 100); // Cambia el tiempo en milisegundos para ajustar el retraso antes de mostrar el video
+});
+
         // Detectar si el dispositivo es móvil
         function isMobile() {
             return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
@@ -68,4 +80,4 @@ window.addEventListener('beforeunload', function(event) {
 
         // Ejecutar la función para cambiar el video si es móvil
         changeVideoForMobile();
-    </script>
+</script>
