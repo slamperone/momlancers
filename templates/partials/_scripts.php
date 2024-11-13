@@ -50,16 +50,22 @@ window.addEventListener('beforeunload', function(event) {
            
             }
   });
- 
+  
+        // Detectar si el dispositivo es móvil
+        function isMobile() {
+            return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+        }
 
+        // Cambiar el archivo del video si es un dispositivo móvil
+        function changeVideoForMobile() {
+            if (isMobile()) {
+                const videoElement = document.getElementById('videoPlayer');
+                const videoSource = document.getElementById('videoSource');
+                videoSource.src = '<?php bloginfo('template_directory');?>/assets/video/momlancer_home_video_mobile'; // Cambiar el archivo para móviles
+                videoElement.load(); // Recargar el video con el nuevo archivo
+            }
+        }
 
-  document.addEventListener("DOMContentLoaded", function() {
-    setTimeout(function() {
-        
-        var video = document.getElementById('hero-video');
-      video.style.display = 'block';
-      video.muted = false;
-      //  video.play();
-    }, 200); // Cambia el tiempo en milisegundos para ajustar el retraso antes de mostrar el video
-});
-</script>
+        // Ejecutar la función para cambiar el video si es móvil
+        changeVideoForMobile();
+    </script>

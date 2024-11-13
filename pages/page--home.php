@@ -10,11 +10,12 @@ get_header(); ?>
 	<div class="inner">
 		<div class="container-fluid g-0">
 		  <div class="row">
-		  	<div class="col-12">
-		  	 
-			  <video autoplay loop muted playsinline oncontextmenu="return false;" id="hero-video">	  
+		  	<div class="col-12">		  	 
+			  <video id="hero-video" autoplay loop muted oncontextmenu="return false;">	  
 
-			  <source src="<?php bloginfo('template_directory');?>/assets/video/hero_video.mp4" type="video/mp4">
+			  <source src="<? bloginfo('template_directory');?>/assets/video/momlancer_home_video.mp4" type="video/mp4">
+
+			  Tu navegador no soporta el elemento de video.
        			  	
        			  </video>
 		  	</div>
@@ -314,8 +315,6 @@ get_header(); ?>
 	</div>
 </section-->
 
- 
- 
 <!-- /footer-->
 <?php  get_footer(); ?>
 <!-- /end footer-->
