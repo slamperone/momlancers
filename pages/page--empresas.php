@@ -22,7 +22,7 @@ get_header(); ?>
                             lugar de trabajo más dinámico, innovador e inclusivo</p>
 
                         <span class="d-block my-3">
-                            <h2 class="text-white">3 cosas que puedes junto a momlancers</h2>
+                            <h3 class="text-white">3 cosas que puedes hacer junto a momlancers</h3>
                         </span>
 
 
@@ -49,7 +49,7 @@ get_header(); ?>
                                 <img src="<?php bloginfo('template_directory'); ?>/assets/images/tres.png" alt=""
                                     class="img-fluid">
                             </div>
-                            <div class="col-10 justify-content-center align-self-center text-white fw-400">Transformar
+                            <div class="col-10 justify-content-center align-self-center text-white fw-400">Transforma
                                 tu cultura</div>
                         </div>
 
@@ -73,7 +73,7 @@ get_header(); ?>
             </div>
             <div class="row my-5 align-items-center">
                 <div class="col-12 text-center">
-                    <p class="fs-4 text-color-2">Déjanos tus datos para contactarte</p>
+                    <p class="fs-4 text-color-2"><a href="<?= get_permalink(18); ?>">Déjanos tus datos para contactarte</a></p>
                 </div>
             </div>
             <div class="row my-5  align-items-top text-center">
@@ -111,7 +111,7 @@ get_header(); ?>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="fs-2 fw-bold">1. Atrae el Talento Femenino</h2>
+                    <h2 class="fs-2 fw-bold">1. Atrae Talento Femenino</h2>
                     <p class="fs-5">¿Con qué te podemos ayudar?</p>
                 </div>
             </div>
@@ -125,7 +125,7 @@ get_header(); ?>
 						array(
 							'title' => 'Conecta con nuestro talento Ready to Engage',
 							'img' => '/assets/images/strap-talento-1.jpg',
-							'link' => '#'
+							'link' => get_permalink(18)
 						)
 					);
 
@@ -281,7 +281,7 @@ if ($the_query->have_posts()):
 	</div>
 </section-->
 
-<section class="strap strap-casos strap-carousel-2">
+<section class="strap strap-owl-carouselos strap-carousel-2">
     <div class="inner py-2 py-md-5">
         <div class="container-fluid">
             <div class="row my-5 align-items-top">

@@ -40,7 +40,7 @@ get_header(); ?>
 		  	<div class="col-12 col-md-5 text-center bg-color-2 ">
 		  		<aside class="d-block p-5 mh-300">
 		  			 <h3 class="fs-4 my-3 fw-bold">Mamás</h3>
-		  		     <p>Para ellas que buscan retomar su vida laboral y desarrollarse profesionalmente</p>
+		  		     <p>Para ellas que buscan retomar su vida laboral y desarrollarse profesionalmente.</p>
 		  		     <a href="<?=get_permalink(140);?>" class="btn btn-cta fw-bold">Saber Más</a>
 		  		</aside>
 		  	</div>

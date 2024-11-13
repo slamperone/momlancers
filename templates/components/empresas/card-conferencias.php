@@ -20,7 +20,7 @@
          <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
          <li class="list-group-item py-3 d-flex justify-content-between align-items-center gap-2">
              <a href="<?= the_permalink(); ?>" class="text-white float-start fw-400 text-start"><?= the_title(); ?></a>
-             <a href="<?= the_permalink(); ?>" class="btn btn-sm  text-color-1  float-end">Cotizar</a>
+             <a href="<?= the_permalink(); ?>" target="_blank" class="btn btn-sm  text-color-1  float-end">Saber más</a>
          </li>
          <?php endwhile; ?>
      </ul>
