@@ -11,7 +11,7 @@ get_header(); ?>
 		<div class="container-fluid g-0">
 		  <div class="row">
 		  	<div class="col-12">		  	 
-			  <video id="hero-video" autoplay loop muted oncontextmenu="return false;">	  
+			  <video id="hero-video" autoplay loop muted playsinline oncontextmenu="return false;">	  
 
 			  <source src="<?= bloginfo('template_directory');?>/assets/video/momlancer_home_video.mp4" type="video/mp4">
 
