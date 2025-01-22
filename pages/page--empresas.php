@@ -195,7 +195,7 @@ if ($the_query->have_posts()):
                     </iconify-icon>
                 </button>
                 <div class="col-10 offset-1 offset-md-0 col-md-10">
-                    <div class="owl-carousel owl-style-1">
+                    <div class="owl-carousel s">
                         <?php
 							while ($the_query->have_posts()) : $the_query->the_post();
 								$post = get_post($the_query->id);
